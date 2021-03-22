@@ -1,0 +1,34 @@
+{
+    "Custom Function Component for Concepts": {
+      "prefix": "zzview",
+      "body": [
+        "import React from \"react\";",
+        "import { View } from \"react-native\";",
+        "",
+        "/**",
+        " * ### ${2:Brief description}",
+        " *  - ${3:Detailed explanation (if any)}",
+        " *  ----",
+        " *  @example ",
+        " *  ${6:You may skip this for now...}",
+        " *  ----",
+        " *  @version ${CURRENT_YEAR_SHORT}.${CURRENT_MONTH}.${CURRENT_DATE}",
+        " *  -  *${4:Brief changelog}*",
+        " *  @author  ${5:Your Name}",
+        " *  ",
+        " **/",
+        "${9:export} function ${1:${TM_FILENAME_BASE}}(props:any) {",
+        "  return (",
+        " <View",
+        "    style={{",
+        "      flex: 1,",
+        "      justifyContent: \"center\",",
+        "      alignItems: \"center\",",
+        "    }}",
+        "  ></View>",
+        "  );",
+        "};"
+      ],
+      "description": "Create a basic view component with filename"
+    },
+}
