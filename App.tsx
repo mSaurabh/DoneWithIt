@@ -14,6 +14,9 @@ import ListItem from "./app/components/ListItem/ListItem";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput/AppTextInput";
 import AppPicker from "./app/components/AppPicker/AppPicker";
+import LoginScreen from "./app/screens/LoginScreen";
+import RegisterScreen from "./app/screens/RegisterScreen";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 /**
  *
  * * Flexbox horizontal axis is called "Primary Axis"
@@ -27,33 +30,8 @@ export default function App() {
   //return <ListingsScreen />;
   //return <AppTextInput icon="email" placeholder="Username" />;
   //return <C_Switch />;
-  const categories = [
-    {
-      label: "Furniture",
-      value: 1,
-    },
-    {
-      label: "Electronics",
-      value: 2,
-    },
-    {
-      label: "Clothing",
-      value: 3,
-    },
-  ];
-
-  const [category, setCategory] = useState(categories[0]);
-
-  return (
-    <Screen>
-      <AppPicker
-        selectedItem={category}
-        onSelectItem={(item) => setCategory(item)}
-        items={categories}
-        icon="apps"
-        placeholder="Category"
-      />
-      <AppTextInput icon="email" placeholder="Email" />
-    </Screen>
-  );
+  //return <LoginScreen />;
+  return <ListingEditScreen />;
+  //return <C_Picker />;
+  //return <MessagesScreen />;
 }

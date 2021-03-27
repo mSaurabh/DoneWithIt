@@ -9,7 +9,7 @@ function AppButton({
 }: {
   title: string;
   onPress: any;
-  color: string;
+  color?: string;
 }) {
   return (
     <TouchableOpacity

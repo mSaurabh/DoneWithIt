@@ -10,4 +10,18 @@ export enum colors {
   PURPLE = "purple",
   GOLD = "gold",
   DANGER = "#ff5252",
+  FURNITURE = "#fc5c65",
+  CARS = "#fd9644",
+  CAMERAS = "#fed330",
+  GAMES = "#26de81",
+  CLOTHING = "#2bcbba",
+  SPORTS = "#45aaf2",
+  MOVIESMUSIC = "#4b7bec",
+}
+
+export interface dItems {
+  label: string;
+  value: number;
+  color?: string;
+  icon?: string;
 }

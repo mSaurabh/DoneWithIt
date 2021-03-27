@@ -14,8 +14,20 @@ import defaultStyles from "../../config/styles";
  *  @author  s_Mankar
  *
  **/
-function AppText({ children, style }: { children: any; style?: any }) {
-  return <Text style={[defaultStyles.text, style]}>{children}</Text>;
+function AppText({
+  children,
+  style,
+  ...otherProps
+}: {
+  children: any;
+  style?: any;
+  [x: string]: any;
+}) {
+  return (
+    <Text style={[defaultStyles.text, style]} {...otherProps}>
+      {children}
+    </Text>
+  );
 }
 
 export default AppText;

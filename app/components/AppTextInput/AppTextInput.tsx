@@ -5,9 +5,19 @@ import Screen from "../Screen";
 
 import defaultStyles from "../../config/styles";
 
-function AppTextInput({ icon, placeholder }: { icon?: any; placeholder: any }) {
+function AppTextInput({
+  icon,
+  width = "100%",
+  placeholder,
+  ...otherProps
+}: {
+  icon?: any;
+  width: any;
+  placeholder?: string;
+  [x: string]: any;
+}) {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { width: width }]}>
       {icon && (
         <MaterialCommunityIcons
           style={styles.icon}
@@ -16,7 +26,12 @@ function AppTextInput({ icon, placeholder }: { icon?: any; placeholder: any }) {
           color={defaultStyles.colors.MEDIUM}
         />
       )}
-      <TextInput style={defaultStyles.text} placeholder={placeholder} />
+      <TextInput
+        style={defaultStyles.text}
+        placeholder={placeholder}
+        placeholderTextColor={defaultStyles.colors.MEDIUM}
+        {...otherProps}
+      />
     </View>
   );
 }
@@ -26,7 +41,6 @@ const styles = StyleSheet.create({
     backgroundColor: defaultStyles.colors.LIGHT,
     borderRadius: 25,
     flexDirection: "row",
-    width: "100%",
     padding: 15,
     marginVertical: 10,
   },

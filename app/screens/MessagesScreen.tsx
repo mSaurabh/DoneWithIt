@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, FlatList, View } from "react-native";
-import { colors } from "../config/Common-Resources.props";
+import { FlatList } from "react-native";
 
 import ListItem from "../components/ListItem/ListItem";
 import ListItemDeleteAction from "../components/ListItemDeleteAction/ListItemDeleteAction";
@@ -17,7 +16,8 @@ interface dMessageItem {
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
+    title:
+      "This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.This is a long title that is going to distort the screen really bad and hence we need to fix this.",
     description: "D1",
     image: require("../assets/Saurabh-2.jpeg"),
   },
@@ -62,7 +62,5 @@ function MessagesScreen(props: any) {
     </Screen>
   );
 }
-
-const styles = StyleSheet.create({});
 
 export default MessagesScreen;
