@@ -66,7 +66,7 @@ const categories = [
   },
 ];
 
-function ListingEditScreen(props) {
+function ListingEditScreen(props: any) {
   return (
     <Screen style={styles.container}>
       <AppForm
