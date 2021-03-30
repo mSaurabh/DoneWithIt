@@ -1,7 +1,7 @@
 import { Formik } from "formik";
 import React from "react";
 
-function AppForm({
+function Form({
   initialValues,
   onSubmit,
   validationSchema,
@@ -23,4 +23,4 @@ function AppForm({
   );
 }
 
-export default AppForm;
+export default Form;

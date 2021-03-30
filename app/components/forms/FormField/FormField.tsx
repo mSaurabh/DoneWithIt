@@ -6,10 +6,10 @@ import {
   useFormikContext,
 } from "formik";
 
-import AppTextInput from "../../AppTextInput/AppTextInput";
+import AppTextInput from "../../TextInput/TextInput";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
-function AppFormField({
+function FormField({
   name,
   width,
   ...otherProps
@@ -38,4 +38,4 @@ function AppFormField({
   );
 }
 
-export default AppFormField;
+export default FormField;

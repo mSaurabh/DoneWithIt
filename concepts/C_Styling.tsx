@@ -6,7 +6,7 @@
  */
 import React, { useState } from "react";
 import { Switch, TextInput, View } from "react-native";
-import AppText from "../app/components/AppText";
+import AppText from "../app/components/Text";
 import Screen from "../app/components/Screen";
 import { Platform, Text } from "react-native";
 import { IOSFONT, ANDROIDFONT } from "./font.family.enum";

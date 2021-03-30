@@ -11,11 +11,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Screen from "../Screen";
 
 import defaultStyles from "../../config/styles";
-import AppText from "../AppText";
+import AppText from "../Text";
 import PickerItem from "../PickerItem/PickerItem";
 import { dItems } from "../../config/Common-Resources.props";
 
-function AppPicker({
+function Picker({
   icon,
   items,
   onSelectItem,
@@ -108,4 +108,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AppPicker;
+export default Picker;

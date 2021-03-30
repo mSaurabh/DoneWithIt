@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import defaultStyles from "../../config/styles";
 
-function AppButton({
+function Button({
   title,
   onPress,
   color = defaultStyles.colors.PRIMARY,
@@ -23,7 +23,7 @@ function AppButton({
   );
 }
 
-export default AppButton;
+export default Button;
 
 const styles = StyleSheet.create({
   button: {
